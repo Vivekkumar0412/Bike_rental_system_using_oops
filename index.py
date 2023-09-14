@@ -28,3 +28,23 @@ while True:
         obj.rentBike(n)
     else:
         break
+
+a = 59
+print(f"the value is {a}")
+
+class sett:
+    def __init__(self):
+        self.name = ""
+        self.__privateFun()
+    def getName(self):
+        return self.name
+    def setName(Self,n):
+        Self.name = n
+    def __privateFun(self):
+        print("I AM PRIVATE FUNCTION")
+ob = sett()
+v = ob.getName()
+print(v)
+ob.setName("Vivek")
+print(ob.getName())
+# ob.__privateFun()
